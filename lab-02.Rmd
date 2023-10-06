@@ -89,7 +89,9 @@ table(regiondata)
 ```{r Ex2, message = FALSE}
 # Write your code here to answer exercise 2
 
+plastic_data_all$total_mismanage_plastic <- plastic_data_all$mismanaged_plastic * plastic_data_all$population
 
+plastic_data_all
 
 ```
 
