@@ -123,6 +123,9 @@ medtotal
 ```{r Ex4, message = FALSE}
 # Write your code here to answer exercise 4
 
+plastic_data_all <- plastic_data_all %>% rename("pop" = population)
 
+plastic_data_all <- plastic_data_all %>% mutate(region = str_replace_all(region, "Latin America and The Caribbean", "LAC"))
 
+plastic_data_all
 ```
